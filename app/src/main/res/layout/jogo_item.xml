@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/ivJogo"
+            android:layout_width="96dp"
+            android:layout_height="110dp"
+            android:layout_marginRight="8dp"
+            android:scaleType="fitCenter"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tvNome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="God of war"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvAnoLancamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lançamento: 2018"
+                android:textColor="#AAA"
+                android:textSize="12sp"
+                />
+            <TextView
+                android:id="@+id/tvDescricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="14sp"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:text="lorem loremloremloremloremloremloremloremloremloremloremloremloremloremlorem"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
